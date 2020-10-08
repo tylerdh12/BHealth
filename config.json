@@ -3,7 +3,8 @@
   "site_title": "BHealth | Health Coach",
   "site_description": "BHeath is a health blog",
   "site_keywords": [
-    "Health"
+    "Health",
+    "Healing"
   ],
   "posts_per_page": 5,
   "twitter_account": "@my-account",
