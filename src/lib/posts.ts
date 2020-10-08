@@ -1,7 +1,7 @@
 import fs from "fs";
 import matter from "gray-matter";
-import path from "path";
 import yaml from "js-yaml";
+import path from "path";
 
 const postsDirectory = path.join(process.cwd(), "src/pages/posts");
 
@@ -10,6 +10,7 @@ export type PostContent = {
   readonly title: string;
   readonly slug: string;
   readonly tags?: string[];
+  readonly author?: string;
 };
 
 let postCache: PostContent[];
@@ -38,6 +39,7 @@ function fetchPostContent(): PostContent[] {
         title: string;
         tags: string[];
         slug: string;
+        author: string;
       };
       const slug = fileName.replace(/\.mdx$/, "");
 

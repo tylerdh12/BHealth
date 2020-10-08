@@ -1,9 +1,9 @@
 import React from "react";
 import { PostContent } from "../lib/posts";
+import { TagContent } from "../lib/tags";
+import Pagination from "./Pagination";
 import PostItem from "./PostItem";
 import TagLink from "./TagLink";
-import Pagination from "./Pagination";
-import { TagContent } from "../lib/tags";
 
 type Props = {
   posts: PostContent[];
@@ -54,6 +54,8 @@ export default function PostList({ posts, tags, pagination }: Props) {
         }
         li {
           list-style: none;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
         }
         .posts {
           display: flex;
