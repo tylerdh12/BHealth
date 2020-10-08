@@ -14,7 +14,7 @@ export default function Navigation() {
         <ul>
           <li>
             <Link href="/">
-              <a className={router.pathname === "/" ? "active" : null}>about</a>
+              <a className={router.pathname === "/" ? "active" : null}>About</a>
             </Link>
           </li>
           <li>
@@ -24,7 +24,7 @@ export default function Navigation() {
                   router.pathname.startsWith("/posts") ? "active" : null
                 }
               >
-                blog
+                Blog
               </a>
             </Link>
           </li>
@@ -58,15 +58,17 @@ export default function Navigation() {
               transform: translateY(0);
             }
             li {
+              font-weight: 500;
               margin-bottom: 1.75rem;
               font-size: 2rem;
-              padding: 0 1.5rem 0 0;
+              padding: 0 0 0 0;
+              text-align: center;
             }
             li:last-child {
               margin-bottom: 0;
             }
             .active {
-              color: #222;
+              color: #cc5de8;
             }
 
             @media (min-width: 769px) {
