@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Burger from "./Burger";
 import { useState } from "react";
+import Burger from "./Burger";
+import { SocialList } from "./SocialList";
 
 export default function Navigation() {
   const router = useRouter();
@@ -27,6 +28,7 @@ export default function Navigation() {
               </a>
             </Link>
           </li>
+          <SocialList />
         </ul>
         <style jsx>
           {`
