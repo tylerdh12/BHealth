@@ -4,7 +4,7 @@ import React from "react";
 
 export function SocialList({}) {
   return (
-    <div style={{ width: "100%", textAlign: "center" }}>
+    <div style={{marginRight: 30}}>
       <a
         title="Facebook"
         href={`https://facebook.com`}
